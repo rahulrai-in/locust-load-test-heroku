@@ -1,0 +1,27 @@
+{
+	"folders": [
+		{
+			"name": "API",
+			"path": "api"
+		},
+		{
+			"name": "Load Test",
+			"path": "loadtest"
+		},
+		{
+			"name": "Defaults",
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.autoSave": "afterDelay",
+		"files.exclude": {
+			"api/": true,
+			"loadtest/": true
+		},
+		"cSpell.words": [
+			"devcontainer",
+			"loadtest"
+		]
+	}
+}

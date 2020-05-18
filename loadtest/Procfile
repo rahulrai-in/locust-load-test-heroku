@@ -1,0 +1,2 @@
+worker_scene_1: bash ./run.sh locustfile_scene_1.py scene_1
+worker_scene_2: bash ./run.sh locustfile_scene_2.py scene_2
