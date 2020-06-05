@@ -1,3 +1,3 @@
-locust
+locust==1.0.2
 pyzmq
 msgpack-python

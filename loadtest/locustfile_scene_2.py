@@ -1,4 +1,4 @@
-from locust import HttpLocust, TaskSet, task, between
+from locust import HttpUser, TaskSet, task, between
 
 
 class UserBBehavior(TaskSet):
@@ -13,6 +13,6 @@ class UserBBehavior(TaskSet):
         self.client.get("/buggy")
 
 
-class AdminUser(HttpLocust):
-    task_set = UserBBehavior
+class AdminUser(HttpUser):
+    tasks = {UserBBehavior}
     wait_time = between(5, 15)
