@@ -33,6 +33,7 @@ func main() {
 
 	http.HandleFunc("/buggy", func(w http.ResponseWriter, r *http.Request) {
 		// After every 5 requests, throw error
+		requestCount++
 		count := requestCount
 		delay := count / 10
 		if count%5 == 0 {
