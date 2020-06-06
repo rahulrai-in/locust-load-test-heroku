@@ -1,6 +1,6 @@
 #!/bin/bash
 
-locust -f $1 --no-web -c 200 -r 10 --host=$TARGET_HOST --csv="$2_$(date +%F_%T)" --run-time 1h -t 2s --stop-timeout 60
+locust -f $1 --headless -u 200 -r 10 --host=$TARGET_HOST --csv="$2_$(date +%F_%T)" --run-time 1h -t 2s --stop-timeout 60
 
 for filename in *.csv; do
     [ -e "$filename" ] || continue
